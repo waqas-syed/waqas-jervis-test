@@ -1,0 +1,45 @@
+#######################
+# Aurea Central Jervis
+#######################
+# User guide and documentation can be found at: https://github.com/trilogy-group/aurea-jervis
+# This project is based on https://github.com/samrocketman/jervis
+language: java
+ 
+jdk:
+  - openjdk9
+ 
+before_install:
+  - echo "What you have to do before install the requirements of your project"
+ 
+install:
+  - echo "What you have to install for your project work?"
+ 
+env:
+ - Test1="test"
+ 
+before_script:
+  - echo "this is before script section"
+ 
+script:
+  - echo "Here you'll build your artifacts. "
+  - touch build/teste.log
+after_success:
+  - echo "This works! "
+ 
+after_failure:
+  - echo "This failed"
+ 
+branches:
+  only:
+    - develop
+    - master
+     
+jenkins:
+  platform: docker
+  # lifecycles_standard_stable.json
+  os: ubuntu1604
+  stability: stable
+  sudo: sudo
+  pipeline_jenkinsfile: aurea-central-jervis/pipelines/SaaS
+  collect:
+    artifacts: build/*.log
