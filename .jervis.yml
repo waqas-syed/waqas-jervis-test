@@ -18,3 +18,4 @@ jenkins:
   os: ubuntu1604
   stability: stable
   sudo: sudo
+  pipeline_jenkinsfile: aurea-central-jervis/pipelines/SaaS
