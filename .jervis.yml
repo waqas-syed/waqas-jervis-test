@@ -6,7 +6,7 @@
 language: shell
 
 script:
-  - echo "Here you'll build your artifacts. Version Windows"
+  - echo "Here you'll build your artifacts. Version Linux"
   
 after_success:
   - echo "This works! "
