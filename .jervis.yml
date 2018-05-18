@@ -6,7 +6,7 @@
 language: shell
 
 script:
-  - echo "Here you'll build your artifacts. Version Linux"
+  - echo "Here you'll build your artifacts. Version Ubuntu"
   
 after_success:
   - echo "This works! "
@@ -21,5 +21,5 @@ branches:
 jenkins:
   platform: docker
   # lifecycles_standard_stable.json
-  os: linux
+  os: ubuntu1604
   pipeline_jenkinsfile: aurea-central-jervis/pipelines/SaaS
