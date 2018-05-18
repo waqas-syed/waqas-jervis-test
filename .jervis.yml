@@ -21,5 +21,5 @@ branches:
 jenkins:
   platform: docker
   # lifecycles_standard_stable.json
-  os: windows
+  os: linux
   pipeline_jenkinsfile: aurea-central-jervis/pipelines/SaaS
