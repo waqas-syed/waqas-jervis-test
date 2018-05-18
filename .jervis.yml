@@ -6,7 +6,7 @@
 language: shell
 
 script:
-  - echo "Here you'll build your artifacts. Version Ubuntu"
+  - echo "Here you'll build your artifacts. Version Ubuntu stable"
   
 after_success:
   - echo "This works! "
@@ -22,4 +22,7 @@ jenkins:
   platform: docker
   # lifecycles_standard_stable.json
   os: ubuntu1604
+  stability: stable
+  sudo: sudo
+  pipeline_jenkinsfile: aurea-central-jervis/pipelines/SaaS
   pipeline_jenkinsfile: aurea-central-jervis/pipelines/SaaS
